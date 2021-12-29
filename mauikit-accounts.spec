@@ -110,6 +110,6 @@ widgets shared amoing the other Maui apps.
 %{_libdir}/libMauiKitAccounts.so.%{major}*
 
 %files -n %{devname}
-%{_includedir}/auiKit/Accounts/
+%{_includedir}/MauiKit/Accounts/
 %{_libdir}/cmake/MauiKitAccounts/MauiKitAccounts*
 %{_libdir}/libMauiKitAccounts.so
