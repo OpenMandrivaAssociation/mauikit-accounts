@@ -1,4 +1,4 @@
-%define major 2
+%define major 1
 
 %define libname %mklibname MauiKit-accounts %{major}
 %define devname %mklibname -d MauiKit-accounts
@@ -103,13 +103,13 @@ widgets shared amoing the other Maui apps.
 %ninja_install -C build
 
 %files
-#{_libdir}/qt5/qml/org/mauikit/filebrowsing
+%{_libdir}/qt5/qml/org/mauikit/accounts/
 
 %files -n %{libname}
-#{_libdir}/libMauiKitFileBrowsing.so.1*
-#{_libdir}/libMauiKitFileBrowsing.so.%{major}*
+%{_libdir}/libMauiKitAccounts.so.%{version}
+%{_libdir}/libMauiKitAccounts.so.%{major}*
 
 %files -n %{devname}
-#{_includedir}/MauiKit/FileBrowsing
-#{_libdir}/cmake/MauiKitFileBrowsing
-#{_libdir}/libMauiKitFileBrowsing.so
+%{_includedir}/auiKit/Accounts/
+%{_libdir}/cmake/MauiKitAccounts/MauiKitAccounts*
+%{_libdir}/libMauiKitAccounts.so
