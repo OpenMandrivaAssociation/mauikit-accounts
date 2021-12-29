@@ -3,10 +3,10 @@
 %define libname %mklibname MauiKit-accounts %{major}
 %define devname %mklibname -d MauiKit-accounts
 
-Name:		mauikit-filebrowsing
+Name:		mauikit-accounts
 Version:	2.1.0
 Release:	1
-Summary:	MauiKit File Browsing utilities and controls
+Summary:	MauiKit accountsg utilities and controls
 Url:		http://mauikit.org/
 Source0:	https://invent.kde.org/maui/mauikit-accounts/-/archive/v%{version}/mauikit-accounts-v%{version}.tar.bz2
 
