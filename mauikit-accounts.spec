@@ -1,14 +1,15 @@
-%define major 1
+%define major 2
 
+%define snapshot 20220106
 %define libname %mklibname MauiKit-accounts %{major}
 %define devname %mklibname -d MauiKit-accounts
 
 Name:		mauikit-accounts
-Version:	2.1.0
-Release:	1
+Version:	2.1.1
+Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	MauiKit accountsg utilities and controls
 Url:		http://mauikit.org/
-Source0:	https://invent.kde.org/maui/mauikit-accounts/-/archive/v%{version}/mauikit-accounts-v%{version}.tar.bz2
+Source0:	https://invent.kde.org/maui/mauikit-accounts/-/archive/%{?snapshot:master/mauikit-accounts-master.tar.bz2#/mauikit-accounts-%{snapshot}.tar.bz2}%{!?snapshot:v%{version}/mauikit-accounts-v%{version}.tar.bz2}
 
 License:	LGPL-2.1-or-later, CC0 1.0, BSD-2-Clause
 Group:		Applications/Productivity
@@ -93,7 +94,7 @@ widgets shared amoing the other Maui apps.
 
 
 %prep
-%autosetup -p1 -n %{name}-v%{version}
+%autosetup -p1 -n %{name}-%{?snapshot:master}%{!?snapshot:v%{version}}
 %cmake_kde5 -G Ninja
 
 %build
@@ -106,7 +107,6 @@ widgets shared amoing the other Maui apps.
 %{_libdir}/qt5/qml/org/mauikit/accounts/
 
 %files -n %{libname}
-%{_libdir}/libMauiKitAccounts.so.%{version}
 %{_libdir}/libMauiKitAccounts.so.%{major}*
 
 %files -n %{devname}
