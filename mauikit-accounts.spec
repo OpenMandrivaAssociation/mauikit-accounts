@@ -103,7 +103,9 @@ widgets shared amoing the other Maui apps.
 %install
 %ninja_install -C build
 
-%files
+%find_lang mauikitaccounts
+
+%files -f mauikitaccounts.lang
 %{_libdir}/qt5/qml/org/mauikit/accounts/
 
 %files -n %{libname}
