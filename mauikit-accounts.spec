@@ -1,11 +1,11 @@
 %define major 2
 
-%define snapshot 20220106
+#define snapshot 20220106
 %define libname %mklibname MauiKit-accounts %{major}
 %define devname %mklibname -d MauiKit-accounts
 
 Name:		mauikit-accounts
-Version:	2.1.1
+Version:	2.2.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	MauiKit accountsg utilities and controls
 Url:		http://mauikit.org/
