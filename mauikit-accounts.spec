@@ -5,7 +5,7 @@
 %define devname %mklibname -d MauiKit-accounts
 
 Name:		mauikit-accounts
-Version:	2.2.2
+Version:	3.0.0
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	MauiKit accountsg utilities and controls
 Url:		http://mauikit.org/
