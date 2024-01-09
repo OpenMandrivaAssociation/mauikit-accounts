@@ -1,11 +1,12 @@
 %define major 3
 
 #define snapshot 20220106
-%define libname %mklibname MauiKit-accounts %{major}
+%define libname %mklibname MauiKit-accounts
+%define oldlibname %mklibname MauiKit-accounts 3
 %define devname %mklibname -d MauiKit-accounts
 
 Name:		mauikit-accounts
-Version:	3.0.0
+Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	MauiKit accountsg utilities and controls
 Url:		http://mauikit.org/
@@ -16,7 +17,7 @@ Group:		Applications/Productivity
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
-BuildRequires:  cmake(MauiKit)
+BuildRequires:  cmake(MauiKit3)
 BuildRequires:	cmake(Qt5Qml)
 BuildRequires:	cmake(Qt5Sql)
 BuildRequires:	cmake(Qt5Core)
@@ -67,6 +68,7 @@ widgets shared amoing the other Maui apps.
 %package -n %{libname}
 Summary:	Library files for mauikit-accounts
 Group:		System/Libraries
+%rename %{oldlibname}
 Requires:	%{name} = %{EVRD}
 
 %description -n %{libname}
