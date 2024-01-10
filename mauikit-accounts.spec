@@ -114,6 +114,6 @@ widgets shared amoing the other Maui apps.
 %{_libdir}/libMauiKitAccounts3.so.%{major}*
 
 %files -n %{devname}
-%{_includedir}/MauiKit/Accounts3/
+%{_includedir}/MauiKit3/Accounts/
 %{_libdir}/cmake/MauiKitAccounts3/MauiKitAccounts3*
 %{_libdir}/libMauiKitAccounts3.so
