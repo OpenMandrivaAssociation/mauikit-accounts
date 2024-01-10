@@ -111,9 +111,9 @@ widgets shared amoing the other Maui apps.
 %{_libdir}/qt5/qml/org/mauikit/accounts/
 
 %files -n %{libname}
-#{_libdir}/libMauiKitAccounts.so.%{major}*
+%{_libdir}/libMauiKitAccounts3.so.%{major}*
 
 %files -n %{devname}
-#{_includedir}/MauiKit/Accounts/
-#{_libdir}/cmake/MauiKitAccounts/MauiKitAccounts*
-#{_libdir}/libMauiKitAccounts.so
+%{_includedir}/MauiKit/Accounts3/
+%{_libdir}/cmake/MauiKitAccounts3/MauiKitAccounts3*
+%{_libdir}/libMauiKitAccounts3.so
