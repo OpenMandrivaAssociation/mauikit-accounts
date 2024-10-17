@@ -9,7 +9,7 @@ Name:		mauikit-accounts
 Version:	3.0.2
 Release:	%{?snapshot:0.%{snapshot}.}1
 Summary:	MauiKit accountsg utilities and controls
-Url:		http://mauikit.org/
+Url:		https://mauikit.org/
 Source0:	https://invent.kde.org/maui/mauikit-accounts/-/archive/%{?snapshot:master/mauikit-accounts-master.tar.bz2#/mauikit-accounts-%{snapshot}.tar.bz2}%{!?snapshot:v%{version}/mauikit-accounts-v%{version}.tar.bz2}
 
 License:	LGPL-2.1-or-later, CC0 1.0, BSD-2-Clause
