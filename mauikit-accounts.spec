@@ -109,12 +109,12 @@ widgets shared amoing the other Maui apps.
 %find_lang mauikitaccounts
 
 %files -f mauikitaccounts.lang
-%{_libdir}/qt5/qml/org/mauikit/accounts/
+#{_libdir}/qt5/qml/org/mauikit/accounts/
 
 %files -n %{libname}
-%{_libdir}/libMauiKitAccounts3.so.%{major}*
+%{_libdir}/libMauiKitAccounts4.so.%{major}*
 
 %files -n %{devname}
-%{_includedir}/MauiKit3/Accounts/
-%{_libdir}/cmake/MauiKitAccounts3/MauiKitAccounts3*
-%{_libdir}/libMauiKitAccounts3.so
+%{_includedir}/MauiKit4/Accounts/
+%{_libdir}/cmake/MauiKitAccounts4/MauiKitAccounts4*
+%{_libdir}/libMauiKitAccounts4.so
